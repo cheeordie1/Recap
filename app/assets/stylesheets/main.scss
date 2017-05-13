@@ -6,10 +6,47 @@
  * CSS for header
  */
 #headerContainer {
-  background-color: #fdcc52;
-  background: linear-gradient(#225dfb,#0d32f3);
+  position: relative;
+  width: 100%;
+  background: linear-gradient(#225dfb, #0d32f3);
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-bottom: 0px;
+  border-bottom: solid 1px #71e194;
 }
 
 #indexLogo {
   height: 50px;
+}
+
+#indexNav {
+  margin-bottom: 5px;
+}
+
+.headerNav {
+  color: #ffffff;
+}
+
+/*
+ * CSS for section 1
+ */
+#indexSectionContainer1 {
+  width: 100%;
+  padding: 30px;
+  padding-bottom: 0px;
+  background: linear-gradient(#fdcc52, #fdc539);
+}
+
+#indexImage1 {
+  width: 600px;
+  opacity: 0.35;
+}
+
+.indexText1 {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    color: #35373b;
+    font-size: 50px;
+    z-index: 1;
 }
