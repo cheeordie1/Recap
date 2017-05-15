@@ -6,9 +6,10 @@
  * CSS for header
  */
 #headerContainer {
-  position: relative;
+  position: fixed;
+  z-index: 10;
   width: 100%;
-  background: linear-gradient(#225dfb, #0d32f3);
+  background: linear-gradient(#7b9aec, #0d32f3);
   padding-top: 20px;
   padding-left: 15px;
   padding-bottom: 0px;
@@ -27,14 +28,23 @@
   color: #ffffff;
 }
 
+#indexContentContainer {
+  position: relative;
+  top: 75px;
+}
+
 /*
  * CSS for section 1
  */
 #indexSectionContainer1 {
   width: 100%;
-  padding: 30px;
-  padding-bottom: 0px;
   background: linear-gradient(#fdcc52, #fdc539);
+}
+
+#indexSectionText1 {
+  position: relative;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 #indexImage1 {
@@ -44,9 +54,30 @@
 
 .indexText1 {
     position: absolute;
-    width: 100%;
-    top: 100px;
+    margin-top: -20px;
     color: #35373b;
-    font-size: 50px;
     z-index: 1;
+}
+
+/*
+ * CSS for section 2
+ */
+#indexSectionContainer2 {
+  width: 100%;
+}
+
+.indexSectionTextHeader {
+  color: #35373b;
+}
+
+/*
+ * CSS for section 3
+ */
+#indexSectionContainer3 {
+  width: 100%;
+  background: linear-gradient(#fdcc52, #fdc539);
+}
+
+#indexRecapStatement {
+  margin-top: 15px;
 }
