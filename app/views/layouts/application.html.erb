@@ -6,10 +6,20 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"> 
   </head>
 
   <body>
+    <!-- Render the page wipe animation/page exit animation -->
+    <%= render "layouts/app_transitions" %>
+  
+    <!-- Render the header -->
+    <%= render "layouts/app_header" %>
+
+    <!-- Yield to render the app -->
     <%= yield %>
+
+    <!-- Render the footer -->
+    <%= render "layouts/app_footer" %>
   </body>
 </html>

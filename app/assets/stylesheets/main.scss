@@ -3,71 +3,61 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /*
- * CSS for header
+ * CSS for section containers
  */
-#headerContainer {
-  position: fixed;
-  z-index: 10;
-  width: 100%;
-  background: linear-gradient(#7b9aec, #0d32f3);
-  padding-top: 20px;
-  padding-left: 15px;
-  padding-bottom: 0px;
-  border-bottom: solid 1px #71e194;
-}
-
-#indexLogo {
-  height: 50px;
-}
-
-#indexNav {
-  margin-bottom: 5px;
-}
-
-.headerNav {
-  color: #ffffff;
-}
-
-#indexContentContainer {
+#appContainer {
   position: relative;
-  top: 75px;
+  margin-top: 69px;
 }
 
 /*
  * CSS for section 1
  */
-#indexSectionContainer1 {
+div.sectionContainer {
+  height: calc( 100vh - 69px );
   width: 100%;
-  background: linear-gradient(#fdcc52, #fdc539);
 }
 
-#indexSectionText1 {
-  position: relative;
+div.row div.indexSectionText {
   margin-bottom: 0px;
-  padding-bottom: 0px;
+  padding: 0px 10vw 0px 10vw;
 }
 
-#indexImage1 {
-  width: 600px;
-  opacity: 0.35;
+#indexSection1Row1 {
+  position: relative;
+  height: 50%;
+}
+
+#indexSection1Text1 {
+  position: relative;
+  top: 42%;
 }
 
 .indexText1 {
-    position: absolute;
-    margin-top: -20px;
+    font-weight: 300;
     color: #35373b;
     z-index: 1;
+}
+
+#indexSection1Row2 {
+  position: relative;
+  height: 50%;
+}
+
+#indexSection1Text2 {
+  position: relative;
+  top: 8%;
 }
 
 /*
  * CSS for section 2
  */
-#indexSectionContainer2 {
-  width: 100%;
+#indexSection2Row1 {
+  height: 50%;
 }
 
-.indexSectionTextHeader {
-  color: #35373b;
+#indexSection2Row2 {
+  height: 50%;
 }
 
 /*
