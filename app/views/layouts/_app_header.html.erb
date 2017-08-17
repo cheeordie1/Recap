@@ -1,7 +1,7 @@
 <div id="headerContainer" class="container affix-top">
   <div class="row">
     <div id="logoContainer" class="col-sm-4 text-right">
-      <%= image_tag "Logo", id: "headerLogo" %>
+      <%= link_to image_tag("Logo", id: "headerLogo"), root_path, method: :get %>
     </div>
     <div id="headerNavContainer" class="col-sm-8">
       <nav id="headerNav" class="navbar navbar-collapse navbar-right">

@@ -52,6 +52,18 @@ $font-family-base: 'Open Sans', sans-serif;
   background: rgba(0, 0, 0, 0);
 }
 
+a {
+  user-select: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+}
+
+img {
+  user-select: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+}
+
 /*
  * CSS Animations for the application
  */

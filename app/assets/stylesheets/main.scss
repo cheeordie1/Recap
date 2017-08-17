@@ -63,11 +63,25 @@ div.row div.indexSectionText {
 /*
  * CSS for section 3
  */
-#indexSectionContainer3 {
-  width: 100%;
-  background: linear-gradient(#fdcc52, #fdc539);
+#indexSection3Row1 {
+  height: 100%;
 }
 
-#indexRecapStatement {
-  margin-top: 15px;
+#indexSection3Text1 {
+  position: relative;
+  top: 26%;
+}
+
+/*
+ * CSS for unfinished pages
+ */
+.unfinished {
+  margin-top: 69px;
+  height: calc( 100vh - 69px );
+}
+
+div.unfinished h1 {
+  position: relative;
+  top: 30%;
+  font-weight: 300;
 }
