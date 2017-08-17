@@ -1,0 +1,37 @@
+<div id="headerContainer" class="container affix-top">
+  <div class="row">
+    <div id="logoContainer" class="col-sm-4 text-right">
+      <%= link_to image_tag("Logo", id: "headerLogo"), root_path, method: :get %>
+    </div>
+    <div id="headerNavContainer" class="col-sm-8">
+      <nav id="headerNav" class="navbar navbar-collapse navbar-right">
+        <div>
+          <ul class="nav navbar-nav">
+            <li>
+              <a id="visionLink" class="page-scroll headerNav" href="/vision">Vision</a>
+            </li>
+            <li>
+              <a id="initiativesLink" class="page-scroll headerNav" href="/initiatives">Initiatives</a>
+            </li>
+            <li>
+              <a id="aboutLink" class="page-scroll headerNav" href="/about">About</a>
+            </li>
+            <li>
+              <a id="getInvolvedLink" class="page-scroll headerNav" href="/get_involved">Get Involved</a>
+            </li>
+            <li>
+              <a id="newsLink" class="page-scroll headerNav" href="/news">News</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <script>
+    var visionLink = new makeAnimLink ("visionLink", "wipeTransition");
+    var initiativesLink = new makeAnimLink ("initiativesLink", "wipeTransition");
+    var aboutLink = new makeAnimLink ("aboutLink", "wipeTransition");
+    var getInvolvedLink = new makeAnimLink ("getInvolvedLink", "wipeTransition");
+    var newsLink = new makeAnimLink ("newsLink", "wipeTransition");
+  </script>
+</div>

@@ -3,13 +3,85 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /*
- * CSS for header
+ * CSS for section containers
  */
-#headerContainer {
-  background-color: #fdcc52;
-  background: linear-gradient(#225dfb,#0d32f3);
+#appContainer {
+  position: relative;
+  margin-top: 69px;
 }
 
-#indexLogo {
-  height: 50px;
+/*
+ * CSS for section 1
+ */
+div.sectionContainer {
+  height: calc( 100vh - 69px );
+  width: 100%;
+}
+
+div.row div.indexSectionText {
+  margin-bottom: 0px;
+  padding: 0px 10vw 0px 10vw;
+}
+
+#indexSection1Row1 {
+  position: relative;
+  height: 50%;
+}
+
+#indexSection1Text1 {
+  position: relative;
+  top: 42%;
+}
+
+.indexText1 {
+    font-weight: 300;
+    color: #35373b;
+    z-index: 1;
+}
+
+#indexSection1Row2 {
+  position: relative;
+  height: 50%;
+}
+
+#indexSection1Text2 {
+  position: relative;
+  top: 8%;
+}
+
+/*
+ * CSS for section 2
+ */
+#indexSection2Row1 {
+  height: 50%;
+}
+
+#indexSection2Row2 {
+  height: 50%;
+}
+
+/*
+ * CSS for section 3
+ */
+#indexSection3Row1 {
+  height: 100%;
+}
+
+#indexSection3Text1 {
+  position: relative;
+  top: 26%;
+}
+
+/*
+ * CSS for unfinished pages
+ */
+.unfinished {
+  margin-top: 69px;
+  height: calc( 100vh - 69px );
+}
+
+div.unfinished h1 {
+  position: relative;
+  top: 30%;
+  font-weight: 300;
 }
