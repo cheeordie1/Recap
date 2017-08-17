@@ -20,6 +20,3 @@
 
 # Ignore all swap files
 *.swp
-
-# Ignore these keep things
-*.keep
