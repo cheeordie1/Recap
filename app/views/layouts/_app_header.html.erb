@@ -1,7 +1,7 @@
 <div id="headerContainer" class="container affix-top">
   <div class="row">
     <div id="logoContainer" class="col-sm-4 text-right">
-      <%= link_to image_tag("Logo.png", id: "headerLogo"), root_path, method: :get %>
+      <%= link_to image_tag("Logo.png", id: "headerLogo"), root_path, method: :get, id: "homeLink" %>
     </div>
     <div id="headerNavContainer" class="col-sm-8">
       <nav id="headerNav" class="navbar navbar-collapse navbar-right">
@@ -28,6 +28,7 @@
     </div>
   </div>
   <script>
+    var homeLink = new makeAnimLink ("homeLink", "wipeTransition");
     var visionLink = new makeAnimLink ("visionLink", "wipeTransition");
     var initiativesLink = new makeAnimLink ("initiativesLink", "wipeTransition");
     var aboutLink = new makeAnimLink ("aboutLink", "wipeTransition");
