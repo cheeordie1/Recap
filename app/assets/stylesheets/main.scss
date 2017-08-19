@@ -3,11 +3,63 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /*
+ * CSS Animations for index
+ */
+@keyframes arrowFloat {
+  0% {
+    top: 0px;
+  }
+
+  20% {
+    top: 3px;
+  }
+
+  25% {
+    top: 4px;
+  }
+
+  30% {
+    top: 3px;
+  }
+
+  50% {
+    top: 0px;
+  }
+
+  70% {
+    top: -3px;
+  }
+
+  75% {
+    top: -4px;
+  }
+
+  80% {
+    top: -3px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+/*
  * CSS for section containers
  */
 #appContainer {
   position: relative;
   margin-top: 69px;
+}
+
+.downArrow {
+  position: relative;
+  height: 64%;
+  animation: arrowFloat 2.5s infinite;
+  animation-timing-function: linear;
+}
+
+.downArrowContainer {
+  height: 27%;
 }
 
 /*
@@ -25,12 +77,12 @@ div.row div.indexSectionText {
 
 #indexSection1Row1 {
   position: relative;
-  height: 50%;
+  height: 40%;
 }
 
 #indexSection1Text1 {
   position: relative;
-  top: 42%;
+  top: 32%;
 }
 
 .indexText1 {
@@ -41,12 +93,16 @@ div.row div.indexSectionText {
 
 #indexSection1Row2 {
   position: relative;
-  height: 50%;
+  height: 33%;
 }
 
 #indexSection1Text2 {
   position: relative;
-  top: 8%;
+  top: 4%;
+}
+
+#indexSection1Row3 {
+  height: 27%;
 }
 
 /*
@@ -56,8 +112,22 @@ div.row div.indexSectionText {
   height: 50%;
 }
 
+#indexSection2Text1 {
+  position: relative;
+  top: 37%;
+}
+
 #indexSection2Row2 {
-  height: 50%;
+  height: 23%;
+}
+
+#indexSection2Text2 {
+  position: relative;
+  top: 4%
+}
+
+#indexSection2Row3 {
+  height: 27%;
 }
 
 /*
