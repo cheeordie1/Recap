@@ -5,6 +5,7 @@ function makeAnimLink (linkID, fadeOutContainerID) {
 
   // Function to follow an animated link
   obj.followLink = function (clickEvt) {
+    clickEvt.stopPropagation ();
     clickEvt.preventDefault ();
     obj.linkAnim = new makePageOutAnim (obj.fadeOutContainerID, 
                                         obj.$link.attr ('href'));
